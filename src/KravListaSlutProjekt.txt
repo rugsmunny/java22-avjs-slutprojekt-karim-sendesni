@@ -1,0 +1,130 @@
+Slutprojekt - Webbshop
+    Inlämning
+        Deadline
+        Inlämning:  Måndag 8/8 kl 23:59
+        Redovisning: Måndag 8/8 kl 09:00
+
+Inlämning
+    Lägg upp koden på ett repo på github. Namnge det såhär: java22-avjs-slutprojekt-förnamn-efternamn
+    Repot ska innehålla
+        docs - med alla bundlade filer för github pages
+        src - med alla filer du utvecklar i
+        package.json - med alla dependencies osv
+        Publicera sidan med github pages
+        På classroom ska följande skickas in
+        Länk till github repot
+        Länk till github pages
+
+Beskrivning
+Du ska skapa en one page webbshop-app med hjälp av React. (Alltså endast en html-fil)
+I beskrivningen nedan där det står “sida” är det alltså i själva verket en komponent vars innehåll motsvarar en sida.
+
+Krav - Innehåll
+
+    Varje sida ska ha en meny som innehåller
+        Produkter
+            Vid klick -> tar användaren till produktsidan   FÄRDIG
+        En kundvagn
+            Visar alltid antal produkter i kundvagnen
+            Vid klick -> Tar användaren till kundvagn-sidan FÄRDIGT
+        Produktsida
+            Minst 5 produkter som hämtas från Firebase
+        Varje produkt ska visa
+            Namn - Bild - Pris - Lagersaldo
+
+Varje produkt ska gå att lägga till i kundvagnen så länge som saldot är mer än 0. (Du väljer själv hur användaren lägger till produkten)
+
+    Kundvagn-sida
+        Ska visa antalet av varje produkt som har lagts till i kundvagnen (Du väljer själv hur detaljerat)
+        Ska visa det sammanlagda priset av alla produkter
+        Användaren ska kunna välja
+            Genomför köp -> Ger användaren ett meddelande om att köpet har genomförts -> Uppdaterar lagersaldot på firebase
+                -> Klicka färdigt -> tar kund till uppdaterad main sida
+            Töm kundvagnen -> Tömmer Kundvagnen -> Tar användaren till produktsidan
+
+Tips!
+Läs igenom thinking in REACT - Planera med papper och penna - Dela upp allting i minsta moment.
+
+    Fokusera på EN sak i taget istället för att lösa flera moment på en gång.
+    Se till att ett moment fungerar innan du går vidare till nästa.
+    Ta en paus, be om hjälp, var snäll mot dig själv.
+
+Betygsättning
+    Betyg G
+        För att projektet ska bli godkänt behöver allt under krav finnas med och fungera.
+        Projektet betygsätts inte utifrån utseende. Men all info måste vara tydlig.
+        Projektet ska vara inlämnat i tid enligt anvisningarna under ‘Inlämning’.
+
+    Betyg VG
+        För att projektet ska nå Väl Godkänt behöver alla kriterier under G uppfyllas.
+        Den studerande ska självständigt ha lagt till ytterligare användbar funktionalitet i projektet.
+        Koden samt alla filer ska vara strukturerat på ett sätt som gör det readable och maintainable.
+
+OBS! Ange i kommentar på classroom om du satsar på VG. Når inte projektet VG vid första tillfället får du en chans att komplettera projektet för att uppnå VG.
+
+
+
+
+Min ingrediensLista - Tankar - Idéer
+Interaktion
+
+
+
+
+Ikoner - Heroicons
+Bildform och säkert form syntax överlag : Shapes
+
+Switch toogle för light
+ - darkmode : Toggling dark mode
+
+Sidonavigering : Basic example
+Sida med navbar och kundkorg bl.a : TE Navigation
+
+Ripple effect vid klick
+Scroll back to top : Basic example
+Spinner - laddanimation : Basic example
+Floating banner : rabattKod - Erbjudande : Floating Banner
+Produkt CTA : Product Card Call To Action
+	‘Elegant’ skulle kunna va CTA produkt : Elegant Card Feature Section
+
+Kundkorg - Modal alt container höger till vänster fixed höger sida, försvinner vänster till höger. Positions (top höger)
+
+Kundkorg från sidan - offcanvas : Basic example
+Kundkorg notifikation : Notification within tabs
+Rating : https://tailwind-elements.com/docs/standard/components/rating/#custom_icons
+
+Modal kontaktinfo -
+	Sida : https://tailwind-elements.com/docs/standard/designblocks/contact/#section-v-8
+exempelkod : https://tailwind-elements.com/snippets/tailwind/tailwindelements/3757811
+
+Produkter
+ProduktKort - Product Card Call To Action
+Features - Elegant Card Feature Section Produktbeskrivning ish
+Review cards - Review Cards
+Produktpresentation singel stor - Testimonial Page - Testimonial Card with Image
+
+
+UtvecklarVerktyg
+
+WebStorm
+Kolla plugins för div. struktur, organisering, stöd, färgkodning etc
+React
+https://tailwind-elements.com/docs/standard/integrations/react-integration/
+CSS
+Tailwind
+https://tailwindcss.com/docs/theme#configuration-reference
+https://tailwind-elements.com/docs/standard/getting-started/theming/
+Läs för div. tema konfigurationer
+	-	Fördelare sida https://tailwind-elements.com/docs/standard/content-styles/dividers/#blurry_horizontal
+
+	- TW Färg och shading
+		- https://tailwind-elements.com/docs/standard/content-styles/colors/
+PurgeCSS -
+great tool that analyzes content of your html/javascript files and reduces CSS by deleting unused selectors.
+
+
+
+
+
+
+

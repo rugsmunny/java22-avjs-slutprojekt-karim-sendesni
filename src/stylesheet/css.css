@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+.navbar{
+
+    background-color: #337;
+    position: sticky;
+    top: 0;
+    color: #eee9f0;
+    z-index: 100;
+    padding: 0 1rem 1rem 0;
+
+}
+
+.navbar > ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style: none;
+    color: #eee9f0;
+
+}
+.logo{
+    font-size: 3rem;
+}
+
+ul > li {
+    font-family: Impact, sans-serif;
+    font-size: 2rem;
+    color: #eee9f0;
+}
+
+a{
+
+    color: #eee9f0;
+    text-decoration: none;
+
+}
+
+
+
+body{
+    background: #eee9f0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar { /* Chrome Safari */
+    display: none;
+}
+
+
+
+button,
+a{
+    cursor: pointer;
+
+}
+
+img{
+    mix-blend-mode: multiply;
+}
+.shoe-container {
+    margin-top: 5em;
+    padding: 0 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    justify-content: center;
+    align-items: end;
+
+
+}
+.cart-container{
+    border: 2px solid #335;
+    max-height: 100vh;
+    border-radius: 5em;
+    padding: 1em;
+
+}
+.shoe-container>* {
+    flex: 1 1 25%;
+}
+.card button:hover {
+    opacity: 0.7;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 25em;
+    gap: 1em;
+
+
+}
+.cart-card{
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+    display: flex;
+    margin: 2em 1em;
+    width: 70%;
+}
+
+
+.title{
+    font-family: Impact, sans-serif;
+    padding-left: 6%;
+    font-size: larger;
+    height: 2rem;
+    width: -webkit-fill-available;
+
+}
+.cart-card >* {
+    width: -webkit-fill-available;
+    max-width: 10rem;
+}
+.cart-card > img{
+    width: 10%;
+
+}
+.cart-item-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+}
+.price, p, button {
+    font-family: helvetica, sans-serif;
+    text-align-last: left;
+}
+.price, .qty, button {
+    font-weight: bolder;
+
+}
+.product-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 6%;
+}
+
+.first-card-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-to-cart-btn{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+.filter-bar{
+height: 4rem;
+    background-color: #2225;
+}
+
+@media screen and (max-width: 800px) {
+
+    .dropdown-content{
+        max-width: fit-content;
+        background-color: #337;
+        flex-flow: wrap;
+        font-family: Impact, sans-serif;
+        display: none;
+    }
+
+
+    div > .card {
+        width: 90vw;
+    }
+    #shoe-container{
+        flex-direction: column;
+        width: 100vw;
+        align-content: center;
+        padding: 0;
+        gap: 0;
+    }
+    .navbar > ul{
+        flex-flow: column;
+        align-items: start;
+        float: left;
+    }
+    .navbar{
+        height: fit-content;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .cart-card{
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .cart-card img{
+        width: -webkit-fill-available;
+    }
+
+    li {
+        float: right;
+    }
+    a > p {
+        float: right;
+    }
+}
+
+.loader {
+    border: 16px solid #335d;
+    border-radius: 50%;
+    border-top: 16px solid #3347;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+.cart-num{
+
+    outline: 3px solid white;
+    border-radius: 40px;
+    justify-content: center;
+    margin-left: .5em;
+    display: flex;
+    position: -webkit-sticky;
+    font-size: .7em;
+    float: right;
+    width: 2rem;
+    text-align: -webkit-center;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: 2px solid white;
+    outline: 2px solid #337;
+    background-color: #337;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "react-mall",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://rugsmunny.github.io/java22-avjs-slutprojekt-karim-sendesni/",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist",
+    "build": "parcel build src/index.html --dist-dir docs --public-url ./",
+    "deploy": "parcel build ./src/index.html --public-url '/java22-avjs-slutprojekt-karim-sendesni/' && gh-pages -d docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.3.2",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    ">0.5%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.17",
+    "babel-plugin-macros": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+
+}
