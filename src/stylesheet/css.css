@@ -51,7 +51,7 @@ body{
     scrollbar-width: none;  /* Firefox */
 }
 
-body::-webkit-scrollbar { /* Chrome Safari */
+::-webkit-scrollbar { /* Chrome Safari */
     display: none;
 }
 
