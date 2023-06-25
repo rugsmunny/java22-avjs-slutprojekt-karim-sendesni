@@ -51,7 +51,7 @@ body{
     scrollbar-width: none;  /* Firefox */
 }
 
-::-webkit-scrollbar { /* Chrome Safari */
+body::-webkit-scrollbar { /* Chrome Safari */
     display: none;
 }
 
@@ -79,10 +79,14 @@ img{
 }
 .cart-container{
     border: 2px solid #335;
-    max-height: 100vh;
+    max-height: 70vh;
     border-radius: 5em;
     padding: 1em;
+    overflow: scroll;
 
+}
+.cart-container::-webkit-scrollbar { /* Chrome Safari */
+    display: none;
 }
 .shoe-container>* {
     flex: 1 1 25%;
